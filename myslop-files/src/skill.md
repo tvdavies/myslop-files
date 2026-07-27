@@ -1,9 +1,9 @@
 ---
-name: myslop-files
+name: file-upload
 description: Upload a local file (screenshot, recording, log, HTML artifact) to files.myslop.app and return a permanent public URL. Use whenever a shareable link to a local file is needed, including for GitHub pull requests, Slack messages, or sharing HTML documents.
 ---
 
-# myslop-files upload
+# file-upload
 
 Upload files to https://files.myslop.app and get back a permanent URL.
 
