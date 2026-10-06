@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cant-stop",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-10-06",
+  "workers_dev": false,
+  "routes": [{ "pattern": "cantstop.myslop.app", "custom_domain": true }],
+  "assets": {
+    // The Vite plugin points this at the client build; no "directory" needed.
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true }
+}

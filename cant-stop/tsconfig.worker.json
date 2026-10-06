@@ -1,0 +1,10 @@
+{
+  // Worker runtime: no DOM. Shares the pure rules engine with the client.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "types": []
+  },
+  "include": ["worker", "worker-configuration.d.ts", "src/engine"],
+  "exclude": ["src/engine/**/*.test.ts"]
+}
